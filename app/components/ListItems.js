@@ -1,5 +1,5 @@
 export function ListItems() {
-  const articles = ["array", "math", "object"];
+  const articles = ["array", "math", "object", "destructuring-assignment", "spread-and-rest", "this"];
   let items = "";
   articles.forEach(el => {
     items += `<li class="item list-group-item"><a href="#/article/${el}">${el}</a></li>`;

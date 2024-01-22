@@ -37,15 +37,12 @@
 ### Crear un Array
 ```javascript
 let frutas = ["Manzana", "Banana"];
-console.log(frutas.length);
-// 2
+console.log(frutas.length); // 2
 ```
 ### Acceder a un elemento de Array mediante un índice
 ```javascript
-let primero = frutas[0];
-// Manzana
-let ultimo = frutas[frutas.length - 1];
-// Banana
+let primero = frutas[0]; // Manzana
+let ultimo = frutas[frutas.length - 1]; // Banana
 ```
 ### Añadir un elemento al final de un Array
 ```javascript
@@ -196,15 +193,15 @@ El método ```splice()``` cambia el contenido de un array, eliminando o reemplaz
 const numeros = [1, 2, 3, 4, 5];
 // Elimina 2 elementos desde el índice 2 y agrega el número 6 y 7
 const eliminados = numeros.splice(2, 2, 6, 7);
-console.log(numeros); // Resultado: [1, 2, 6, 7, 5]
-console.log(eliminados); // Resultado: [3, 4]
+console.log(numeros); // [1, 2, 6, 7, 5]
+console.log(eliminados); // [3, 4]
 ```
 ## slice() 
 El método ```slice()``` retorna una copia superficial de una porción de un array en un nuevo array, sin modificar el array original. Permite seleccionar elementos desde un índice inicial hasta un índice final (sin incluir este último).
 ```javascript
 const numeros = [10, 20, 30, 40, 50];
 const porcion = numeros.slice(1, 4);
-console.log(porcion); // Resultado: [20, 30, 40]
+console.log(porcion); // [20, 30, 40]
 console.log(numeros); // El array original sigue siendo [10, 20, 30, 40, 50]
 ```
 ## filter() 
@@ -212,7 +209,7 @@ El método ```filter()``` crea un nuevo array con todos los elementos que pasan 
 ```javascript
 const numeros = [5, 10, 15, 20, 25];
 const numerosPares = numeros.filter(num => num % 2 === 0);
-console.log(numerosPares); // Resultado: [10, 20]
+console.log(numerosPares); // [10, 20]
 ```
 
 ## find() 
@@ -220,14 +217,14 @@ El método ```find()``` retorna el valor del primer elemento en un array que cum
 ```javascript
 const numeros = [10, 20, 30, 40, 50];
 const resultado = numeros.find(num => num > 15);
-console.log(resultado); // Resultado: 20
+console.log(resultado); // 20
 ```
 ## map() 
 El método ```map()``` crea un nuevo array con los resultados de llamar a una función proporcionada en cada elemento del array original.
 ```javascript
 const numeros = [1, 2, 3, 4, 5];
 const duplicados = numeros.map(num => num * 2);
-console.log(duplicados); // Resultado: [2, 4, 6, 8, 10]
+console.log(duplicados); // [2, 4, 6, 8, 10]
 ```
 
 
