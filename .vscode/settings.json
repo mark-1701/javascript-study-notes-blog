@@ -11,5 +11,6 @@
   "emmet.triggerExpansionOnTab": true,
   "emmet.includeLanguages": {
     "javascript": "html"
-  }
+  },
+  "liveServer.settings.port": 5501
 }
