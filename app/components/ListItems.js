@@ -1,10 +1,4 @@
-export function ListItems() {
-  const articles = ["array", "math", "destructuring-assignment", "spread-and-rest", "this", "symbol", "set", "map", "weakset-weakmap", "iterators-and-generators", "proxy", "dynamic-properties-objects"];
-  let items = "";
-  articles.forEach(el => {
-    items += `<li class="item list-group-item"><a href="#/article/${el}">${el}</a></li>`;
-  });
-
+export function ListItems(articles) {
   // document.addEventListener("mouseover", e => {
   //   if (e.target.matches(".item") || e.target.matches(".item *")) {
   //     if (e.target.tagName === "A") e.target.parentElement.classList.add("active");
@@ -16,5 +10,10 @@ export function ListItems() {
   //     e.target.classList.remove("active");
   //   }
   // });
+  
+  let items = "";
+  articles.forEach(el => {
+    items += `<li class="item list-group-item"><a href="#/article/${el}">${el}</a></li>`;
+  });
   return items;
 }

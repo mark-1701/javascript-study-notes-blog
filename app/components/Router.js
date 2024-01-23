@@ -8,7 +8,17 @@ export async function Router() {
   // console.log(hash);
 
   if (!hash || hash === "#/") {
-    $main.appendChild(List());
+    ajax({
+      url: `app/assets/blogs.json`,
+      cbSuccess: res => {       
+        $main.appendChild(List(res.data.all));
+      },
+      cbError: err => {
+        let message = err.statusText || "Ocurrió un error";
+        // $main.insertAdjacentHTML("afterend", `<p><b>Error ${err.status}: ${message}</b></p>`);
+        $main.innerHTML = `<p><b>Error ${err.status}: ${message}</b></p>`;
+      }
+    });    
   } else if (hash.includes("#/article")) {
     let words = hash.split("/");
     let word = words[words.length - 1];
