@@ -1,7 +1,6 @@
 # Destructuración
 La sintaxis de desestructuración es una expresión de JavaScript que permite desempacar valores de arreglos o propiedades de objetos en distintas variables.
 
-## Sintaxis básica
 ```javascript
 let a, b, rest;
 
