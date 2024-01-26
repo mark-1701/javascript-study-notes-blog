@@ -1,6 +1,7 @@
 {
   "all": [
     "prototypes",
+    "poo",
     "array",
     "math",
     "destructuring-assignment",
